@@ -1,0 +1,1485 @@
+{
+  "metadata": {
+    "fetch_timestamp": "2025-10-05T15:30:35.531596+00:00",
+    "source": "NVD API v2.0",
+    "total_cves": 20,
+    "date_range": {
+      "days_back": 7,
+      "start_date": "2025-09-28T15:30:35.531596+00:00",
+      "end_date": "2025-10-05T15:30:35.531596+00:00"
+    }
+  },
+  "cves": [
+    {
+      "external_id": "CVE-2025-56154",
+      "title": "CVE-2025-56154",
+      "description": "htmly v3.0.8 is vulnerable to Cross Site Scripting (XSS) in the /author/:name endpoint of the affected application. The name parameter is not properly sanitized before being reflected in the HTML response, allowing attackers to inject arbitrary JavaScript payloads.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 6.1,
+      "metadata": {
+        "published_date": "2025-10-02T16:15:34.773",
+        "last_modified_date": "2025-10-02T19:15:31.653",
+        "vuln_status": "Undergoing Analysis",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+        "cvss_details": {
+          "attackVector": "NETWORK",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "REQUIRED",
+          "scope": "CHANGED",
+          "confidentialityImpact": "LOW",
+          "integrityImpact": "LOW",
+          "availabilityImpact": "NONE",
+          "version": "CVSS 31",
+          "exploitabilityScore": 2.8,
+          "impactScore": 2.7
+        },
+        "cwe_list": [
+          "CWE-79"
+        ],
+        "cwe_ids": [
+          "79"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 2,
+        "references_sample": [
+          {
+            "url": "https://gist.github.com/akinerkisa/28e97fa132b1a98cff5d05a79b437901",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://github.com/danpros/htmly/releases/tag/v3.0.9#:~:text=Security%20fixes%20found%20in%20version%203.0.8",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cve",
+        "cwe_id:79",
+        "vulnerability",
+        "privileges:none",
+        "cwe:cwe-79",
+        "attack_vector:network",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-56154",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T16:15:34.773",
+      "last_updated_from_source": "2025-10-02T19:15:31.653",
+      "ingested_at": "2025-10-05T15:30:34.501533+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-56161",
+      "title": "CVE-2025-56161",
+      "description": "YOSHOP 2.0 allows unauthenticated information disclosure via comment-list API endpoints in the Goods module. The Comment model eagerly loads the related User model without field filtering; because User.php defines no $hidden or $visible attributes, sensitive fields (bcrypt password hash, mobile number, pay_money, expend_money.) are exposed in JSON responses. Route names vary per deployment (e.g. /api/goods.pinglun/list), but all call the same vulnerable model logic.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 7.5,
+      "metadata": {
+        "published_date": "2025-10-02T16:15:34.910",
+        "last_modified_date": "2025-10-02T19:15:31.820",
+        "vuln_status": "Undergoing Analysis",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "cvss_details": {
+          "attackVector": "NETWORK",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "NONE",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "HIGH",
+          "integrityImpact": "NONE",
+          "availabilityImpact": "NONE",
+          "version": "CVSS 31",
+          "exploitabilityScore": 3.9,
+          "impactScore": 3.6
+        },
+        "cwe_list": [
+          "CWE-200"
+        ],
+        "cwe_ids": [
+          "200"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 2,
+        "references_sample": [
+          {
+            "url": "https://gitee.com/xany/yoshop2.0",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://github.com/ZyWAC/CVE-Disclosures/blob/6b337a44934ffe948275995e9b79158e97c78fc4/2025/YOSHOP2.0/CVE-2025-56161.md",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cve",
+        "cwe_id:200",
+        "vulnerability",
+        "privileges:none",
+        "attack_vector:network",
+        "cwe:cwe-200",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-56161",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T16:15:34.910",
+      "last_updated_from_source": "2025-10-02T19:15:31.820",
+      "ingested_at": "2025-10-05T15:30:34.508489+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-56162",
+      "title": "CVE-2025-56162",
+      "description": "YOSHOP 2.0 suffers from an unauthenticated SQL injection in the goodsIds parameter of the /api/goods/listByIds endpoint. The getListByIds function concatenates user input into orderRaw('field(goods_id, ...)'), allowing attackers to: (a) enumerate or modify database data, including dumping admin password hashes; (b) write web-shell files or invoke xp_cmdshell, leading to remote code execution on servers configured with sufficient DB privileges.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 6.5,
+      "metadata": {
+        "published_date": "2025-10-02T16:15:35.047",
+        "last_modified_date": "2025-10-02T20:15:33.220",
+        "vuln_status": "Undergoing Analysis",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+        "cvss_details": {
+          "attackVector": "NETWORK",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "NONE",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "LOW",
+          "integrityImpact": "LOW",
+          "availabilityImpact": "NONE",
+          "version": "CVSS 31",
+          "exploitabilityScore": 3.9,
+          "impactScore": 2.5
+        },
+        "cwe_list": [
+          "CWE-89"
+        ],
+        "cwe_ids": [
+          "89"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 2,
+        "references_sample": [
+          {
+            "url": "https://gitee.com/xany/yoshop2.0",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://github.com/ZyWAC/CVE-Disclosures/blob/6b337a44934ffe948275995e9b79158e97c78fc4/2025/YOSHOP2.0/CVE-2025-56162.md",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cwe:cwe-89",
+        "cwe_id:89",
+        "cve",
+        "vulnerability",
+        "privileges:none",
+        "attack_vector:network",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-56162",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T16:15:35.047",
+      "last_updated_from_source": "2025-10-02T20:15:33.220",
+      "ingested_at": "2025-10-05T15:30:34.509039+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-57305",
+      "title": "CVE-2025-57305",
+      "description": "VitaraCharts 5.3.5 is vulnerable to Server-Side Request Forgery in fileLoader.jsp.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 6.5,
+      "metadata": {
+        "published_date": "2025-10-02T16:15:35.350",
+        "last_modified_date": "2025-10-02T20:15:33.407",
+        "vuln_status": "Awaiting Analysis",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L",
+        "cvss_details": {
+          "attackVector": "NETWORK",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "NONE",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "LOW",
+          "integrityImpact": "NONE",
+          "availabilityImpact": "LOW",
+          "version": "CVSS 31",
+          "exploitabilityScore": 3.9,
+          "impactScore": 2.5
+        },
+        "cwe_list": [
+          "CWE-918"
+        ],
+        "cwe_ids": [
+          "918"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 2,
+        "references_sample": [
+          {
+            "url": "http://vitaracharts.com",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://www.mattz.io/posts/cve-2025-57305/",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cwe_id:918",
+        "cve",
+        "vulnerability",
+        "privileges:none",
+        "attack_vector:network",
+        "cwe:cwe-918",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-57305",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T16:15:35.350",
+      "last_updated_from_source": "2025-10-02T20:15:33.407",
+      "ingested_at": "2025-10-05T15:30:34.510048+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-60660",
+      "title": "CVE-2025-60660",
+      "description": "Tenda AC18 V15.03.05.19 was discovered to contain a stack overflow via the mac parameter in the fromAdvSetMacMtuWan function.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 7.5,
+      "metadata": {
+        "published_date": "2025-10-02T16:15:38.380",
+        "last_modified_date": "2025-10-02T20:15:34.663",
+        "vuln_status": "Undergoing Analysis",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cvss_details": {
+          "attackVector": "NETWORK",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "NONE",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "NONE",
+          "integrityImpact": "NONE",
+          "availabilityImpact": "HIGH",
+          "version": "CVSS 31",
+          "exploitabilityScore": 3.9,
+          "impactScore": 3.6
+        },
+        "cwe_list": [
+          "CWE-121"
+        ],
+        "cwe_ids": [
+          "121"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 1,
+        "references_sample": [
+          {
+            "url": "https://drive.google.com/file/d/1YTKUiYXMsaAEoasx7xbQxy2tsrC5E3Ew/view?usp=sharing",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cve",
+        "vulnerability",
+        "privileges:none",
+        "cwe_id:121",
+        "attack_vector:network",
+        "cwe:cwe-121",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-60660",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T16:15:38.380",
+      "last_updated_from_source": "2025-10-02T20:15:34.663",
+      "ingested_at": "2025-10-05T15:30:34.510048+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-60662",
+      "title": "CVE-2025-60662",
+      "description": "Tenda AC18 V15.03.05.19 was discovered to contain a stack overflow via the wanSpeed parameter in the fromAdvSetMacMtuWan function.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 7.5,
+      "metadata": {
+        "published_date": "2025-10-02T16:15:38.517",
+        "last_modified_date": "2025-10-02T20:15:35.077",
+        "vuln_status": "Undergoing Analysis",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cvss_details": {
+          "attackVector": "NETWORK",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "NONE",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "NONE",
+          "integrityImpact": "NONE",
+          "availabilityImpact": "HIGH",
+          "version": "CVSS 31",
+          "exploitabilityScore": 3.9,
+          "impactScore": 3.6
+        },
+        "cwe_list": [
+          "CWE-121"
+        ],
+        "cwe_ids": [
+          "121"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 1,
+        "references_sample": [
+          {
+            "url": "https://drive.google.com/file/d/1-XpZmT_Yw5JtygQJ6HZBRnC5IjlAnLQO/view?usp=sharing",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cve",
+        "vulnerability",
+        "privileges:none",
+        "cwe_id:121",
+        "attack_vector:network",
+        "cwe:cwe-121",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-60662",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T16:15:38.517",
+      "last_updated_from_source": "2025-10-02T20:15:35.077",
+      "ingested_at": "2025-10-05T15:30:34.510796+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-34208",
+      "title": "CVE-2025-34208",
+      "description": "Vasion Print (formerly PrinterLogic) Virtual Appliance Host and Application (VA/SaaS deployments) store user passwords using unsalted SHA-512 hashes with a fall-back to unsalted SHA-1. The hashing is performed via PHP's `hash()` function in multiple files (server_write_requests_users.php, update_database.php, legacy/Login.php, tests/Unit/Api/IdpControllerTest.php). No per-user salt is used and the fast hash algorithms are unsuitable for password storage. An attacker who obtains the password database can recover cleartext passwords via offline dictionary or rainbow table attacks. The vulnerable code also contains logic that migrates legacy SHA-1 hashes to SHA-512 on login, further exposing users still on the old hash. This vulnerability was partially resolved, but still present within the legacy authentication platform.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": null,
+      "metadata": {
+        "published_date": "2025-10-02T17:16:05.093",
+        "last_modified_date": "2025-10-02T19:11:46.753",
+        "vuln_status": "Undergoing Analysis",
+        "source_identifier": "disclosure@vulncheck.com",
+        "cvss_vector": null,
+        "cvss_details": {},
+        "cwe_list": [
+          "CWE-327",
+          "CWE-759"
+        ],
+        "cwe_ids": [
+          "327",
+          "759"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 5,
+        "references_sample": [
+          {
+            "url": "https://help.printerlogic.com/saas/Print/Security/Security-Bulletins.htm",
+            "source": "disclosure@vulncheck.com",
+            "tags": []
+          },
+          {
+            "url": "https://help.printerlogic.com/va/Print/Security/Security-Bulletins.htm",
+            "source": "disclosure@vulncheck.com",
+            "tags": []
+          },
+          {
+            "url": "https://pierrekim.github.io/blog/2025-04-08-vasion-printerlogic-83-vulnerabilities.html#va-incorrect-encryption-algorithms-password",
+            "source": "disclosure@vulncheck.com",
+            "tags": []
+          },
+          {
+            "url": "https://www.vulncheck.com/advisories/vasion-print-printerlogic-insecure-password-hashing",
+            "source": "disclosure@vulncheck.com",
+            "tags": []
+          },
+          {
+            "url": "https://pierrekim.github.io/blog/2025-04-08-vasion-printerlogic-83-vulnerabilities.html#va-incorrect-encryption-algorithms-password",
+            "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV40"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cve",
+        "cwe:cwe-327",
+        "vulnerability",
+        "cwe_id:327",
+        "cwe_id:759",
+        "cwe:cwe-759",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-34208",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T17:16:05.093",
+      "last_updated_from_source": "2025-10-02T19:11:46.753",
+      "ingested_at": "2025-10-05T15:30:34.510796+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-34210",
+      "title": "CVE-2025-34210",
+      "description": "Vasion Print (formerly PrinterLogic) Virtual Appliance Host and Application (VA/SaaS deployments) store a large number of sensitive credentials (database passwords, MySQL root password, SaaS keys, Portainer admin password, etc.) in cleartext files that are world-readable. Any local user - or any process that can read the host filesystem - can retrieve all of these secrets in plain text, leading to credential theft and full compromise of the appliance. The vendor does not consider this to be a security vulnerability as this product \"follows a shared responsibility model, where administrators are expected to configure persistent storage encryption.\"",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": null,
+      "metadata": {
+        "published_date": "2025-10-02T17:16:05.310",
+        "last_modified_date": "2025-10-02T19:11:46.753",
+        "vuln_status": "Undergoing Analysis",
+        "source_identifier": "disclosure@vulncheck.com",
+        "cvss_vector": null,
+        "cvss_details": {},
+        "cwe_list": [
+          "CWE-256"
+        ],
+        "cwe_ids": [
+          "256"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 5,
+        "references_sample": [
+          {
+            "url": "https://help.printerlogic.com/saas/Print/Security/Security-Bulletins.htm",
+            "source": "disclosure@vulncheck.com",
+            "tags": []
+          },
+          {
+            "url": "https://help.printerlogic.com/va/Print/Security/Security-Bulletins.htm",
+            "source": "disclosure@vulncheck.com",
+            "tags": []
+          },
+          {
+            "url": "https://pierrekim.github.io/blog/2025-04-08-vasion-printerlogic-83-vulnerabilities.html#va-readable-passwords",
+            "source": "disclosure@vulncheck.com",
+            "tags": []
+          },
+          {
+            "url": "https://www.vulncheck.com/advisories/vasion-print-printerlogic-readble-cleartext-passwords",
+            "source": "disclosure@vulncheck.com",
+            "tags": []
+          },
+          {
+            "url": "https://pierrekim.github.io/blog/2025-04-08-vasion-printerlogic-83-vulnerabilities.html#va-readable-passwords",
+            "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV40"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cve",
+        "cwe_id:256",
+        "vulnerability",
+        "cwe:cwe-256",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-34210",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T17:16:05.310",
+      "last_updated_from_source": "2025-10-02T19:11:46.753",
+      "ingested_at": "2025-10-05T15:30:34.512592+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-59403",
+      "title": "CVE-2025-59403",
+      "description": "The Flock Safety Android Collins application (aka com.flocksafety.android.collins) 6.35.31 for Android lacks authentication. It is responsible for the camera feed on Falcon, Sparrow, and Bravo devices, but exposes administrative API endpoints on port 8080 without authentication. Endpoints include but are not limited to: /reboot, /logs, /crashpack, and /adb/enable. This results in multiple impacts including denial of service (DoS) via /reboot, information disclosure via /logs, and remote code execution (RCE) via /adb/enable. The latter specifically results in adb being started over TCP without debugging confirmation, providing an attacker in the LAN/WLAN with shell access.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 6.5,
+      "metadata": {
+        "published_date": "2025-10-02T17:16:05.530",
+        "last_modified_date": "2025-10-02T20:15:33.743",
+        "vuln_status": "Awaiting Analysis",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+        "cvss_details": {
+          "attackVector": "NETWORK",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "NONE",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "NONE",
+          "integrityImpact": "LOW",
+          "availabilityImpact": "LOW",
+          "version": "CVSS 31",
+          "exploitabilityScore": 3.9,
+          "impactScore": 2.5
+        },
+        "cwe_list": [
+          "CWE-400"
+        ],
+        "cwe_ids": [
+          "400"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 4,
+        "references_sample": [
+          {
+            "url": "https://gainsec.com/2025/09/27/fly-by-device-2-the-falcon-sparrow-gated-wireless-rce-camera-feed-dos-information-disclosure-and-more/",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://gainsec.com/wp-content/uploads/2025/09/Root-from-the-Coop-Device-3_-Root-Shell-on-Flock-Safetys-Bravo-Compute-Box-GainSec.pdf",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://www.flocksafety.com/products",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://www.flocksafety.com/products/license-plate-readers",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cve",
+        "cwe:cwe-400",
+        "vulnerability",
+        "privileges:none",
+        "attack_vector:network",
+        "cwe_id:400",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59403",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T17:16:05.530",
+      "last_updated_from_source": "2025-10-02T20:15:33.743",
+      "ingested_at": "2025-10-05T15:30:34.512592+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-59405",
+      "title": "CVE-2025-59405",
+      "description": "The Flock Safety Peripheral com.flocksafety.android.peripheral application 7.38.3 for Android (installed on Falcon and Sparrow License Plate Readers and Bravo Edge AI Compute Devices) contains a cleartext DataDog API key within in its codebase. Because application binaries can be trivially decompiled or inspected, attackers can recover the OAuth secret without special privileges. This secret is intended to remain confidential and should never be embedded directly in client-side software.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 7.5,
+      "metadata": {
+        "published_date": "2025-10-02T17:16:06.243",
+        "last_modified_date": "2025-10-02T20:15:33.913",
+        "vuln_status": "Awaiting Analysis",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "cvss_details": {
+          "attackVector": "NETWORK",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "NONE",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "HIGH",
+          "integrityImpact": "NONE",
+          "availabilityImpact": "NONE",
+          "version": "CVSS 31",
+          "exploitabilityScore": 3.9,
+          "impactScore": 3.6
+        },
+        "cwe_list": [
+          "CWE-200"
+        ],
+        "cwe_ids": [
+          "200"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 4,
+        "references_sample": [
+          {
+            "url": "https://gainsec.com/2025/09/27/fly-by-device-2-the-falcon-sparrow-gated-wireless-rce-camera-feed-dos-information-disclosure-and-more/",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://gainsec.com/wp-content/uploads/2025/09/Root-from-the-Coop-Device-3_-Root-Shell-on-Flock-Safetys-Bravo-Compute-Box-GainSec.pdf",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://www.flocksafety.com/products",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://www.flocksafety.com/products/license-plate-readers",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cve",
+        "cwe_id:200",
+        "vulnerability",
+        "privileges:none",
+        "attack_vector:network",
+        "cwe:cwe-200",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59405",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T17:16:06.243",
+      "last_updated_from_source": "2025-10-02T20:15:33.913",
+      "ingested_at": "2025-10-05T15:30:34.514599+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-59406",
+      "title": "CVE-2025-59406",
+      "description": "The Flock Safety Pisco com.flocksafety.android.pisco application 6.21.11 for Android (installed on Falcon and Sparrow License Plate Readers and Bravo Edge AI Compute Devices) has a cleartext Auth0 client secret in its codebase. Because application binaries can be trivially decompiled or inspected, attackers can recover this OAuth secret without special privileges. This secret is intended to remain confidential and should never be embedded directly in client-side software.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 6.2,
+      "metadata": {
+        "published_date": "2025-10-02T17:16:06.880",
+        "last_modified_date": "2025-10-02T20:15:34.083",
+        "vuln_status": "Awaiting Analysis",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "cvss_details": {
+          "attackVector": "LOCAL",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "NONE",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "HIGH",
+          "integrityImpact": "NONE",
+          "availabilityImpact": "NONE",
+          "version": "CVSS 31",
+          "exploitabilityScore": 2.5,
+          "impactScore": 3.6
+        },
+        "cwe_list": [
+          "CWE-319"
+        ],
+        "cwe_ids": [
+          "319"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 4,
+        "references_sample": [
+          {
+            "url": "https://gainsec.com/2025/09/27/fly-by-device-2-the-falcon-sparrow-gated-wireless-rce-camera-feed-dos-information-disclosure-and-more/",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://gainsec.com/wp-content/uploads/2025/09/Root-from-the-Coop-Device-3_-Root-Shell-on-Flock-Safetys-Bravo-Compute-Box-GainSec.pdf",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://www.flocksafety.com/products",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://www.flocksafety.com/products/license-plate-readers",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cwe_id:319",
+        "cve",
+        "cwe:cwe-319",
+        "vulnerability",
+        "privileges:none",
+        "attack_vector:local",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59406",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T17:16:06.880",
+      "last_updated_from_source": "2025-10-02T20:15:34.083",
+      "ingested_at": "2025-10-05T15:30:34.515826+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-59407",
+      "title": "CVE-2025-59407",
+      "description": "The Flock Safety DetectionProcessing com.flocksafety.android.objects application 6.35.33 for Android (installed on Falcon and Sparrow License Plate Readers and Bravo Edge AI Compute Devices) bundles a Java Keystore (flock_rye.bks) along with its hardcoded password (flockhibiki17) in its code. The keystore contains a private key.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 9.8,
+      "metadata": {
+        "published_date": "2025-10-02T17:16:07.527",
+        "last_modified_date": "2025-10-02T20:15:34.257",
+        "vuln_status": "Awaiting Analysis",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cvss_details": {
+          "attackVector": "NETWORK",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "NONE",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "HIGH",
+          "integrityImpact": "HIGH",
+          "availabilityImpact": "HIGH",
+          "version": "CVSS 31",
+          "exploitabilityScore": 3.9,
+          "impactScore": 5.9
+        },
+        "cwe_list": [
+          "CWE-321"
+        ],
+        "cwe_ids": [
+          "321"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 4,
+        "references_sample": [
+          {
+            "url": "https://gainsec.com/2025/09/27/fly-by-device-2-the-falcon-sparrow-gated-wireless-rce-camera-feed-dos-information-disclosure-and-more/",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://gainsec.com/wp-content/uploads/2025/09/Root-from-the-Coop-Device-3_-Root-Shell-on-Flock-Safetys-Bravo-Compute-Box-GainSec.pdf",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://www.flocksafety.com/products",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://www.flocksafety.com/products/license-plate-readers",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cve",
+        "cwe:cwe-321",
+        "vulnerability",
+        "privileges:none",
+        "attack_vector:network",
+        "cwe_id:321",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59407",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T17:16:07.527",
+      "last_updated_from_source": "2025-10-02T20:15:34.257",
+      "ingested_at": "2025-10-05T15:30:34.515826+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-59409",
+      "title": "CVE-2025-59409",
+      "description": "Flock Safety Falcon and Sparrow License Plate Readers OPM1.171019.026 ship with development Wi-Fi credentials (test_flck) stored in cleartext in production firmware.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 7.5,
+      "metadata": {
+        "published_date": "2025-10-02T17:16:08.177",
+        "last_modified_date": "2025-10-02T20:15:34.427",
+        "vuln_status": "Awaiting Analysis",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "cvss_details": {
+          "attackVector": "NETWORK",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "NONE",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "HIGH",
+          "integrityImpact": "NONE",
+          "availabilityImpact": "NONE",
+          "version": "CVSS 31",
+          "exploitabilityScore": 3.9,
+          "impactScore": 3.6
+        },
+        "cwe_list": [
+          "CWE-312"
+        ],
+        "cwe_ids": [
+          "312"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 4,
+        "references_sample": [
+          {
+            "url": "https://gainsec.com/2025/09/27/fly-by-device-2-the-falcon-sparrow-gated-wireless-rce-camera-feed-dos-information-disclosure-and-more/",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://gainsec.com/wp-content/uploads/2025/09/Root-from-the-Coop-Device-3_-Root-Shell-on-Flock-Safetys-Bravo-Compute-Box-GainSec.pdf",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://www.flocksafety.com/products",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://www.flocksafety.com/products/license-plate-readers",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cve",
+        "cwe:cwe-312",
+        "vulnerability",
+        "privileges:none",
+        "attack_vector:network",
+        "cwe_id:312",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59409",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T17:16:08.177",
+      "last_updated_from_source": "2025-10-02T20:15:34.427",
+      "ingested_at": "2025-10-05T15:30:34.517127+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-60661",
+      "title": "CVE-2025-60661",
+      "description": "Tenda AC18 V15.03.05.19 was discovered to contain a stack overflow via the cloneType parameter in the fromAdvSetMacMtuWan function.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 5.3,
+      "metadata": {
+        "published_date": "2025-10-02T17:16:08.817",
+        "last_modified_date": "2025-10-02T20:15:34.870",
+        "vuln_status": "Undergoing Analysis",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+        "cvss_details": {
+          "attackVector": "NETWORK",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "NONE",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "NONE",
+          "integrityImpact": "NONE",
+          "availabilityImpact": "LOW",
+          "version": "CVSS 31",
+          "exploitabilityScore": 3.9,
+          "impactScore": 1.4
+        },
+        "cwe_list": [
+          "CWE-121"
+        ],
+        "cwe_ids": [
+          "121"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 1,
+        "references_sample": [
+          {
+            "url": "https://drive.google.com/file/d/10bqMY1XighOBZ5D_Q8GtWFwhmxSN2GJw/view?usp=sharing",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cve",
+        "vulnerability",
+        "privileges:none",
+        "cwe_id:121",
+        "attack_vector:network",
+        "cwe:cwe-121",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-60661",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T17:16:08.817",
+      "last_updated_from_source": "2025-10-02T20:15:34.870",
+      "ingested_at": "2025-10-05T15:30:34.517127+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-60663",
+      "title": "CVE-2025-60663",
+      "description": "Tenda AC18 V15.03.05.19 was discovered to contain a stack overflow via the wanMTU parameter in the fromAdvSetMacMtuWan function.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 7.5,
+      "metadata": {
+        "published_date": "2025-10-02T17:16:09.457",
+        "last_modified_date": "2025-10-02T20:15:35.287",
+        "vuln_status": "Undergoing Analysis",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cvss_details": {
+          "attackVector": "NETWORK",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "NONE",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "NONE",
+          "integrityImpact": "NONE",
+          "availabilityImpact": "HIGH",
+          "version": "CVSS 31",
+          "exploitabilityScore": 3.9,
+          "impactScore": 3.6
+        },
+        "cwe_list": [
+          "CWE-121"
+        ],
+        "cwe_ids": [
+          "121"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 1,
+        "references_sample": [
+          {
+            "url": "https://drive.google.com/file/d/1co536tsEdPANFHsvhBvay0_FOMCA4R6r/view?usp=sharing",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cve",
+        "vulnerability",
+        "privileges:none",
+        "cwe_id:121",
+        "attack_vector:network",
+        "cwe:cwe-121",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-60663",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T17:16:09.457",
+      "last_updated_from_source": "2025-10-02T20:15:35.287",
+      "ingested_at": "2025-10-05T15:30:34.519135+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-56019",
+      "title": "CVE-2025-56019",
+      "description": "An insecure permission vulnerability exists in the Agasta Easytouch+ version 9.3.97 The device allows unauthorized mobile applications to connect via Bluetooth Low Energy (BLE) without authentication. Once an unauthorized connection is established, legitimate applications are unable to connect, causing a denial of service. The attack requires proximity to the device, making it exploitable from an adjacent network location.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 6.5,
+      "metadata": {
+        "published_date": "2025-10-02T18:15:46.163",
+        "last_modified_date": "2025-10-02T20:15:33.033",
+        "vuln_status": "Awaiting Analysis",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "cvss_details": {
+          "attackVector": "ADJACENT_NETWORK",
+          "attackComplexity": "LOW",
+          "privilegesRequired": "NONE",
+          "userInteraction": "NONE",
+          "scope": "UNCHANGED",
+          "confidentialityImpact": "NONE",
+          "integrityImpact": "NONE",
+          "availabilityImpact": "HIGH",
+          "version": "CVSS 31",
+          "exploitabilityScore": 2.8,
+          "impactScore": 3.6
+        },
+        "cwe_list": [
+          "CWE-277"
+        ],
+        "cwe_ids": [
+          "277"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 1,
+        "references_sample": [
+          {
+            "url": "https://github.com/Yashodhanvivek/Agatsa-EasyTouch-Plus---CVE-2025-56019/blob/main/input.md",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cwe:cwe-277",
+        "cve",
+        "vulnerability",
+        "privileges:none",
+        "cwe_id:277",
+        "attack_vector:adjacent_network",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-56019",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T18:15:46.163",
+      "last_updated_from_source": "2025-10-02T20:15:33.033",
+      "ingested_at": "2025-10-05T15:30:34.520134+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-32942",
+      "title": "CVE-2025-32942",
+      "description": "SSH Tectia Server before 6.6.6 sometimes allows attackers to read and alter a user's session traffic.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 7.2,
+      "metadata": {
+        "published_date": "2025-10-02T19:15:30.123",
+        "last_modified_date": "2025-10-02T19:15:30.123",
+        "vuln_status": "Received",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:L/I:H/A:L",
+        "cvss_details": {
+          "attackVector": "NETWORK",
+          "attackComplexity": "HIGH",
+          "privilegesRequired": "HIGH",
+          "userInteraction": "NONE",
+          "scope": "CHANGED",
+          "confidentialityImpact": "LOW",
+          "integrityImpact": "HIGH",
+          "availabilityImpact": "LOW",
+          "version": "CVSS 31",
+          "exploitabilityScore": 1.3,
+          "impactScore": 5.3
+        },
+        "cwe_list": [
+          "CWE-670"
+        ],
+        "cwe_ids": [
+          "670"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 1,
+        "references_sample": [
+          {
+            "url": "https://info.ssh.com/tectia-vulnerability-cve-2025-32942",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "privileges:high",
+        "cve",
+        "cwe_id:670",
+        "vulnerability",
+        "attack_vector:network",
+        "cwe:cwe-670",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-32942",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T19:15:30.123",
+      "last_updated_from_source": "2025-10-02T19:15:30.123",
+      "ingested_at": "2025-10-05T15:30:34.521135+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-49090",
+      "title": "CVE-2025-49090",
+      "description": "The Matrix specification before 1.16 (i.e., with a room version before 12 and State Resolution before 2.1) has deficient state resolution.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 7.1,
+      "metadata": {
+        "published_date": "2025-10-02T19:15:31.290",
+        "last_modified_date": "2025-10-02T19:15:31.290",
+        "vuln_status": "Received",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:H/A:L",
+        "cvss_details": {
+          "attackVector": "NETWORK",
+          "attackComplexity": "HIGH",
+          "privilegesRequired": "LOW",
+          "userInteraction": "NONE",
+          "scope": "CHANGED",
+          "confidentialityImpact": "NONE",
+          "integrityImpact": "HIGH",
+          "availabilityImpact": "LOW",
+          "version": "CVSS 31",
+          "exploitabilityScore": 1.8,
+          "impactScore": 4.7
+        },
+        "cwe_list": [
+          "CWE-642"
+        ],
+        "cwe_ids": [
+          "642"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 4,
+        "references_sample": [
+          {
+            "url": "https://github.com/Nheko-Reborn/nheko/issues/1931",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://github.com/matrix-org/matrix-spec/releases/tag/v1.16",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://matrix.org/blog/2025/08/project-hydra-improving-state-res/",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://matrix.org/blog/2025/08/security-release/",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cve",
+        "cwe_id:642",
+        "vulnerability",
+        "privileges:low",
+        "cwe:cwe-642",
+        "attack_vector:network",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-49090",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T19:15:31.290",
+      "last_updated_from_source": "2025-10-02T19:15:31.290",
+      "ingested_at": "2025-10-05T15:30:34.523502+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-54315",
+      "title": "CVE-2025-54315",
+      "description": "The Matrix specification before 1.16 (i.e., with a room version before 12) lacks create event uniqueness.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": 7.1,
+      "metadata": {
+        "published_date": "2025-10-02T19:15:31.477",
+        "last_modified_date": "2025-10-02T19:15:31.477",
+        "vuln_status": "Received",
+        "source_identifier": "cve@mitre.org",
+        "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:H/A:L",
+        "cvss_details": {
+          "attackVector": "NETWORK",
+          "attackComplexity": "HIGH",
+          "privilegesRequired": "LOW",
+          "userInteraction": "NONE",
+          "scope": "CHANGED",
+          "confidentialityImpact": "NONE",
+          "integrityImpact": "HIGH",
+          "availabilityImpact": "LOW",
+          "version": "CVSS 31",
+          "exploitabilityScore": 1.8,
+          "impactScore": 4.7
+        },
+        "cwe_list": [
+          "CWE-837"
+        ],
+        "cwe_ids": [
+          "837"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 2,
+        "references_sample": [
+          {
+            "url": "https://github.com/matrix-org/matrix-spec/releases/tag/v1.16",
+            "source": "cve@mitre.org",
+            "tags": []
+          },
+          {
+            "url": "https://matrix.org/blog/2025/08/project-hydra-improving-state-res/",
+            "source": "cve@mitre.org",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV31"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cwe:cwe-837",
+        "cve",
+        "privileges:low",
+        "vulnerability",
+        "attack_vector:network",
+        "cwe_id:837",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-54315",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T19:15:31.477",
+      "last_updated_from_source": "2025-10-02T19:15:31.477",
+      "ingested_at": "2025-10-05T15:30:34.524502+00:00",
+      "data_version": "1.0"
+    },
+    {
+      "external_id": "CVE-2025-59835",
+      "title": "CVE-2025-59835",
+      "description": "LangBot is a global IM bot platform designed for LLMs. In versions 4.1.0 up to but not including 4.3.5, authorized attackers can exploit the /api/v1/files/documents interface to perform arbitrary file uploads. Since this interface does not strictly restrict the storage directory of files on the server, it is possible to upload dangerous files to specific system directories. This is fixed in version 4.3.5.",
+      "category": "vulnerability",
+      "severity": "Unknown",
+      "cvss_score": null,
+      "metadata": {
+        "published_date": "2025-10-02T19:15:31.983",
+        "last_modified_date": "2025-10-02T19:15:31.983",
+        "vuln_status": "Received",
+        "source_identifier": "security-advisories@github.com",
+        "cvss_vector": null,
+        "cvss_details": {},
+        "cwe_list": [
+          "CWE-23",
+          "CWE-434"
+        ],
+        "cwe_ids": [
+          "23",
+          "434"
+        ],
+        "affected_products_count": 0,
+        "affected_products_sample": [],
+        "vendors": [],
+        "products": [],
+        "references_count": 3,
+        "references_sample": [
+          {
+            "url": "https://github.com/langbot-app/LangBot/pull/1691",
+            "source": "security-advisories@github.com",
+            "tags": []
+          },
+          {
+            "url": "https://github.com/langbot-app/LangBot/releases/tag/v4.3.5",
+            "source": "security-advisories@github.com",
+            "tags": []
+          },
+          {
+            "url": "https://github.com/langbot-app/LangBot/security/advisories/GHSA-7j3j-qj83-9qv4",
+            "source": "security-advisories@github.com",
+            "tags": []
+          }
+        ],
+        "metrics_available": [
+          "cvssMetricV40"
+        ],
+        "raw_configurations_count": 0,
+        "raw_weaknesses_count": 1
+      },
+      "tags": [
+        "cwe:cwe-434",
+        "cwe_id:434",
+        "cwe:cwe-23",
+        "cve",
+        "cwe_id:23",
+        "vulnerability",
+        "severity:unknown"
+      ],
+      "original_source_url": "https://nvd.nist.gov/vuln/detail/CVE-2025-59835",
+      "actual_url": "https://services.nvd.nist.gov/rest/json/cves/2.0",
+      "source_name": "NVD API",
+      "published_date": "2025-10-02T19:15:31.983",
+      "last_updated_from_source": "2025-10-02T19:15:31.983",
+      "ingested_at": "2025-10-05T15:30:34.524502+00:00",
+      "data_version": "1.0"
+    }
+  ]
+}
